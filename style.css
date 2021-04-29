@@ -1,88 +1,79 @@
 *{
-  margin: 0;
+  margin:0;
   padding: 0;
-  font-family: "montserrat",sans-serif;
+  font-family:"montserrat",sans-serif;
 }
 .contact-section{
-  background: url(bg.png) no-repeat center;
-  background-size: cover;
-  width: 100%;
-  height:100%;
-  position:absolute;
-
-
+  background: url(bg.png);
+  position: absolute;
+  width:100%;
+  height: 100%;
 }
- .contact-section h1{ 
-   text-align: center;
-   color: #ddd;
-   padding-top: 20px;
-
- }
-
-
- .contact-form{
-  width: 1188px;
-  height:500px;
-  margin-left:150px;
-  margin-top:40px;
-
-  border-radius: 4px;
-
- }
- 
-.contact-form-text1{
-  width: 556px;
-    background: #111;
-    margin: 5px;
-    padding: 25px;
-    box-sizing: border-box;
-    outline: none;
-    color: #ddd;
-    transition: 0.5s;
-    border: 0;
-    margin-left: 40px
-
-
-
-  
+.contact-section h1{
+  text-align: center;
+  color: #ddd;
+  padding-top: 3%;
 }
 .contact-form-text{
   
-float: right;
-width:556px;
-background: #111;
-margin:5px;
-padding:25px;
-box-sizing: border-box;
-outline:none;
-color:#ddd;
-transition: 0.5s;
-border:0;
-margin-right: 20px;
 
+  width:35%;
+ padding:0.9%;
+ margin: 0.9%;
+ box-sizing: border-box;
+ outline: none;
+ color: #ddd;
+ transition: 0.5s;
+ border: 0;
+ background: #111;
+  
+    
+  }
+   
+  @media screen and (max-width:800px) {
+    .contact-form-text{
+      width:100%; 
+      margin-left: 0.9%;
+      margin-right: 0.9%;
+    }
+  }
+  @media screen and (max-width:800px) {
+    textarea{
+      width:100%; 
+    }
+  }
+   
+  
+ 
 
+   
+.contact-form-text1{
+  width: 35%;
+  padding:0.9%;
+  margin:0.5%;
+  box-sizing: border-box;
+  outline: none;
+  color: #ddd;
+  transition: 0.5s;
+  border: 0;
+  background: #111;
+
+ 
 
   
 }
-
-label{
-  color: #ddd;
-  font-size: 20px;
-  font-style: oblique;
-  padding-left: 15px;
-  margin: 25px;
+@media screen and (max-width:800px) {
+  .contact-form-text1{
+    width:100%;
+    
+    margin-left: 0.9%;
+      margin-right: 0.9%;
+  }
 }
-
- .contact-form-text:focus{
-  box-shadow: 0 0 10px 4px #34495e;
- }
- .contact-form-text1:focus{
-  box-shadow: 0 0 10px 4px #34495e;
- }
- textarea{
+textarea{
   resize: none;
-  height: 110px;
-  width: 750px;
+  height: 20%;
+  width: 40%;
   justify-content: center;
   background: #111;
   color: #ddd;
@@ -91,19 +82,33 @@ label{
   padding:5px;
 
 }
+@media screen and (max-width:800px) {
+  textarea{
+    width:100%; 
+  }
+}
+ 
+
+.contact-form-text:focus{
+  box-shadow: 0 0 10px 4px #34495e;
+ }
+ .contact-form-text1:focus{
+  box-shadow: 0 0 10px 4px #34495e;
+ }
+
 
 .contact-form-btn{
-  float: left;
+
   border: 0;
   background: #34495e;
   color: #fff;
-  padding: 12px 50px;
+  padding: 12px;
   border-radius: 20px;
   cursor: pointer;
   transition: 0.5s;
-  margin: 30px 50px;
-  width: 400px;
+  margin:0.9%;
+  width: 20%;
 }
 .contact-form-btn:hover{
   background: #2980b9;
-} 
+}  

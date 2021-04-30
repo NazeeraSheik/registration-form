@@ -105,3 +105,8 @@ textarea{
 .contact-form-btn:hover{
   background: #2980b9;
 }  
+label{
+  color: wheat;
+  align-items: center;
+  
+}
